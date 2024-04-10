@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --background-page: #eeeeee;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-page);
+  font-family: var(--font-poppins);
+}
+
+.homeImg {
+  background-image: url("/src/assets/profile2.png");
+  height: 20rem;
+  width: 20rem;
+  background-size: cover;
+  border: 3px solid #222831;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 40%;
+  box-shadow: 0px 0px 0px 8px rgba(54, 47, 217, 0.5);
+}
+
+.aboutMePhoto {
+  background-image: url("/src/assets/Picture1.png");
+  background-size: cover;
+  height: 25rem;
+  width: 25rem;
+  border: 3px solid #222831;
+  border-top-left-radius: 60%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 0px 0px 0px 8px rgba(54, 47, 217, 0.5);
+}
+
+.aboutMePhoto:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.projectImg {
+  border: 3px solid #222831;
+  box-shadow: 0px 0px 0px 5px rgba(54, 47, 217, 0.5);
+
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 60%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 40%;
+  height: 100%;
+  width: 15rem;
+}
